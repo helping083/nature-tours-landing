@@ -1,0 +1,23 @@
+{
+  "name": "nature-tours-landing",
+  "version": "1.0.0",
+  "description": "landing page for a travel company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helping083/nature-tours-landing.git"
+  },
+  "author": "helping083",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helping083/nature-tours-landing/issues"
+  },
+  "homepage": "https://github.com/helping083/nature-tours-landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "gulp": "^4.0.2"
+  }
+}
