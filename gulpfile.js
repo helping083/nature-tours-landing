@@ -14,7 +14,11 @@ function html() {
       prefix:'@@'
     }))
     .pipe(dest('dist'))
+}
 
+function icons() {
+  return src('src/scss/fonts/*.+(eot|svg|ttf|woff)')
+          .pipe(dest('dist/css/fonts'))
 }
 
 function scss() {
@@ -42,8 +46,4 @@ function serve() {
   watch('src/scss/**/*.scss', series(scss)).on('change', browserSync.reload);
 }
 
-
-exports.html = html;
-exports.scss = scss;
-exports.build = series(clear, scss, html);
-exports.serve = series(clear, images,scss, html ,serve);
+exports.serve = series(clear, images,scss, icons,html ,serve);
