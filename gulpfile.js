@@ -34,7 +34,7 @@ function clear() {
 }
 
 function images() {
-  return src('src/img/**/*.{png,svg,jpg,ico}')
+  return src('src/img/**/*.{png,svg,jpg,ico,mp4,webm}')
           .pipe(dest('dist/img'))
 }
 
