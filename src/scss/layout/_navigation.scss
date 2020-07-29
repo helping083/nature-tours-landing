@@ -39,6 +39,7 @@
     z-index: 1500;
     width: 0;
     opacity: 0;
+    pointer-events: none;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
@@ -90,6 +91,7 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    pointer-events: all;
   }
 
   &__icon {
