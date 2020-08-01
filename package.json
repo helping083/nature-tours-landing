@@ -29,6 +29,7 @@
   },
   "browserslist": [
     "last 10 version",
+    "dead",
     "> 1%",
     "IE 10"
   ]
