@@ -21,3 +21,9 @@
 }
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-medium {margin-top: 4rem;}
+
+.u-max-mobile-width {
+  @include respond(tab-port) {
+    max-width: 90rem !important;
+  }
+}
