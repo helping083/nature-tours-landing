@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { src, dest, series, watch } = require('gulp')
 const sass = require('gulp-sass');
 const csso = require('gulp-csso');
@@ -48,7 +47,6 @@ function serve() {
 }
 
 exports.serve = series(clear, images,scss, icons,html ,serve);
-=======
 const gulp = require('gulp');
 let browserSync = require("browser-sync").create();
 gulp.task('hello', function() {
@@ -59,4 +57,3 @@ gulp.task('serve', function() {
     server: "./"
   });
 });
->>>>>>> master
